@@ -1,4 +1,6 @@
 # Creating a simnet cluster
+We will learn how to create a self contained bitcoin/lightning cluster for developing.
+This cluster doesn't need internet connectivity and contains all the element to run and communicate between nodes over a private lightning network.
 ## Setting up the environment
 * mkdir workshop
 * cd workshop

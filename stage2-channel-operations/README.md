@@ -1,5 +1,10 @@
 
 # Basic Channel Operations
+We will learn how to:
+1. Open a payment channel
+2. Creating invoices.
+2. Sending payment using single and multi hops
+
 ## Connecting to a node
 * lncli-alice connect 03da76ec38af7d58dcb65818cd640f70a2b4475adeb137b305d576efaac00f79a1@127.0.0.1:10012
 
