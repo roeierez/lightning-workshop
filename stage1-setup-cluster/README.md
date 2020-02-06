@@ -48,7 +48,7 @@ Running btcd with mining address:
 * btcd --simnet --txindex --rpcuser=user --rpcpass=password --miningaddr=<ALICE_ADDRESS>
 
 Generating some blocks:
-* btcctl --simnet --rpcuser=kek --rpcpass=kek generate 400
+* btcctl --simnet --rpcuser=user --rpcpass=password generate 400
 
 Check alice balance
 * lncli-alice walletbalance
