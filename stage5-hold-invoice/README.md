@@ -22,3 +22,18 @@ We learn the concept of hold invoice that can be used for various use cases whic
 ## Swap usage of invoices.
 * submarine swap
 * reverse subswap
+
+```
+OP_HASH160
+<preimageHash>
+OP_EQUAL
+OP_IF
+<payeePubKey>
+OP_ELSE
+lockHeight
+OP_CHECKSEQUENCEVERIFY
+OP_DROP
+<payerPubKey>
+OP_ENDIF
+OP_CHECKSIG
+```
