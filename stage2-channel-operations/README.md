@@ -22,8 +22,14 @@ lncli-alice listchannels
 
 ## Single hop payment
 lncli-bob addinvoice
+lncli-bob decodepayreq --pay_req <payment request>
 lncli-alice payinvoice
 
 ## Excercises
 * Multip hop payment.
 * Close / Force Close a channel.
+
+## Using BTCD to explore closing tx
+* getrawtransaction
+* decoderawtransaction
+* decodescript
