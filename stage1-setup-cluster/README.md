@@ -23,15 +23,15 @@ From "workshop" dir:
 ### btcd
 * btcd --txindex --simnet --rpcuser=user --rpcpass=password
 ### Running Alice
-* cd alice-lnd-node --lnddir .
+* cd alice-lnd-node
 #### running the node
-* lnd -C ./lnd.conf
+* lnd -C ./lnd.conf --lnddir .
 #### creating and unlocking the wallet
 * lncli --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon create
 #### checking the node is running
 * lncli --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon getinfo
 * optional setting alias:
-    * alias lnd-alice ="lncli --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon"
+    * alias lncli-alice="lncli --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon"
 ### Running Bob
 * cd bob-lnd-node
 #### running the node
@@ -41,7 +41,7 @@ From "workshop" dir:
 #### checking the node is running
 * lncli --rpcserver=localhost:10002 --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon getinfo
 * optional setting alias:
-    * alias lnd-bob ="lncli --rpcserver=localhost:10002 --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon"
+    * alias lncli-bob="lncli --rpcserver=localhost:10002 --lnddir . --macaroonpath ./data/chain/bitcoin/simnet/admin.macaroon"
 
 ## Working with underline btc wallet
 Create new bitcoin address:
