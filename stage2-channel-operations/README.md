@@ -6,13 +6,13 @@ We will learn how to:
 2. Sending payment using single and multi hops
 
 ## Connecting to a node
-* lncli-alice connect <bob pub key>@127.0.0.1:10012
+* lncli-alice connect <bob_pub_key>@127.0.0.1:10012
 
 ## showing connected peers
 * lncli-alice listpeers
 
 ## opening a channel
-* lncli-alice openchannel <bob pub key> 1000000
+* lncli-alice openchannel <bob_pub_key> 1000000
 
 ## listing pending channels
 lncli-alice pendinghcannels
