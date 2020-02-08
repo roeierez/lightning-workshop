@@ -6,7 +6,7 @@ We will learn how to:
 2. Sending payment using single and multi hops
 
 ## Connecting to a node
-* lncli-alice connect 03da76ec38af7d58dcb65818cd640f70a2b4475adeb137b305d576efaac00f79a1@127.0.0.1:10012
+* lncli-alice connect <bob pub key>@127.0.0.1:10012
 
 ## showing connected peers
 * lncli-alice listpeers
