@@ -10,13 +10,14 @@ This cluster doesn't require an internet connectivity and contains all the eleme
 From "workshop" dir:
 * git clone https://github.com/btcsuite/btcd.git btcd
 * cd btcd
-* go build -v https://github.com/btcsuite/btcd
-* go build -v https://github.com/btcsuite/btcd/cmd/btcctl
+* go build -v .
+* go build -v ./btcctl
 * Add  btcd directory to the system path
 ## Installing lnd
 From "workshop" dir:
 * git clone https://github.com/lightningnetwork/lnd.git lnd
-* go build -v github.com/lightningnetwork/lnd/cmd/lnd
+* go build -v ./cmd/lnd
+* go build -v ./cmd/lncli
 * Add  lnd directory to the system path
 ## Running the cluster nodes
 ### btcd
