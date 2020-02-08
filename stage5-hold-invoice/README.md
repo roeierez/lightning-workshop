@@ -3,11 +3,11 @@
 We learn the concept of hold invoice that can be used for various use cases which one of them is offchain/onchain swaps.
 
 ## Compile LND with flags to enable more options
-* go build -v -tags="experimental signrpc walletrpc chainrpc invoicesrpc routerrpc backuprpc peerrpc submarineswaprpc breezbackuprpc" github.com/lightningnetwork/lnd/cmd/lncli
+* go build -v -tags="experimental signrpc walletrpc chainrpc invoicesrpc routerrpc backuprpc peerrpc submarineswaprpc breezbackuprpc" ./cmd/lncli ./cmd/lnd
 
 ## Create a 256 bit key and its hash 
 * openssl rand -hex 32
-* echo <key> | xxd -r -p |  openssl sha256 -hex
+* echo <_key_> | xxd -r -p |  openssl sha256 -hex
 
 ## Bob - Create hold invoice
 * lncli-bob addholdinvoice <key> 100
