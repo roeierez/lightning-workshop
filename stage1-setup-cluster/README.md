@@ -11,7 +11,7 @@ From "workshop" dir:
 * git clone https://github.com/btcsuite/btcd.git btcd
 * cd btcd
 * go build -v .
-* go build -v ./btcctl
+* go build -v ./cmd/btcctl
 * Add  btcd directory to the system path
 ## Installing lnd
 From "workshop" dir:
